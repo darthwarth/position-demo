@@ -1,0 +1,138 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    margin: none;
+}
+
+.main-element {
+    margin: 0 20vw;
+}
+
+/* Global positioned element styling */
+.paragraph-element {
+    border-style: dotted;
+}
+
+/* Un-positioned element for reference */
+.container {
+    margin: 7vh 0;
+    border-style: double;
+}
+
+.title-base {
+    background-color: black;
+    color: white;
+}
+
+.base {
+    border-style: dotted;
+    border-color: black;
+}
+
+/* Styling demonstrating relative positioning */
+.relative-container {
+    margin: 7vh 0;
+    border-style: double;
+}
+
+.title-one {
+    background-color: red;
+    color: white;
+}
+
+.relative-paragraph {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    border-color: red;
+}
+
+/* Styling demonstrating relative positioning */
+.absolute-container {
+    border-style: double;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    width: 18vw;
+}
+
+.title-two {
+    background-color: green;
+    color: white;
+}
+
+.absolute-paragraph {
+    border-color: green;
+}
+
+/* Styling demonstrating fixed positioning */
+.fixed-container {
+    border-style: double;
+    position: fixed;
+    top: 200px;
+    right: 20px;
+    width: 18vw;
+}
+
+.title-three {
+    background-color: blue;
+    color: white;
+}
+
+.fixed-paragraph {
+    border-color: blue;
+}
+
+/* Styling demonstrating sticky positioning */
+.sticky-container {
+    border-style: double;
+    margin: 30vh 0;
+    width: 30vw;
+}
+
+.title-four {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 70vh;
+    background-color: darkviolet;
+    color: white;
+}
+
+.sticky-paragraph {
+    border-color: darkviolet;
+}
+
+.demo-container {
+    border-style: groove;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 30vw;
+}
+
+.profile-title {
+    position: relative;
+    height: min-content;
+}
+
+.profile-image {
+    border-radius: 50%;
+    position: relative;
+    top: -20px;
+    left: -20px;
+}
+
+.demo-title {
+    color: rgb(59, 59, 59);
+    position: absolute;
+    top: 30px;
+    font-weight: 600;
+}
+
+.demo-paragraph {
+    color: rgb(59, 59, 59);
+    border: none;
+    padding: 10px;
+}

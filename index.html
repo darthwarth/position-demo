@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Position Demo</title>
+    </head>
+    <body>
+        <div class="main-element">
+            <div class="container">
+                <text class="title-base">Base Element - No position</text>
+                <div class="base">
+                    <text>
+                        This entire parent element, contained within the double-lined border, has no 
+                        positioning set within it and so it and its child elements just respect the 
+                        normal page flow. The parent in this and each of the following cases contains 
+                        two child elements; the title and the paragraph of text.
+                        <br /><br />
+                        This is here to give a point of reference for the following 
+                        examples.
+                    </text>
+                </div>
+            </div>
+            <div class="relative-container">
+                <text class="title-one">Element One - Relative position</text>
+                <div class="paragraph-element relative-paragraph">
+                    <text>
+                        The paragraph in this example, which has a red dotted border, has a 
+                        relative position, both to its top and its left of 20px. So it pushes it 
+                        out of the normal page flow by these amounts.
+                        <br /><br />
+                        The parent element is surrounded by a double border. The relative positioning 
+                        of this paragraph of text pushes it out of its parent's border, as the parent 
+                        is still the size it would be if the positioning was not set.
+                    </text>
+                </div>
+            </div>
+            <div class="absolute-container">
+                <text class="title-two">Element Two - Absolute position</text>
+                <div class="paragraph-element absolute-paragraph">
+                    <text>
+                        The entire element in this example has had its absolute position set 200px 
+                        from the top of the page and 20px from the left.
+                        <br /><br />
+                        Using this setting will force the parent element to behave as though the 
+                        child element isn't there, removing it from the normal page flow, hence 
+                        why the positioning is now based on the page rather than the parent.
+                        <br /><br />
+                        To make an absolutely positioned element position based on its parent 
+                        rather than the page, set the parent's position to relative.
+                    </text>
+                </div>
+            </div>
+            <div class="fixed-container">
+                <text class="title-three">Element Three - Fixed position</text>
+                <div class="paragraph-element fixed-paragraph">
+                    <text>
+                        Setting the fixed position on an element behaves in a similar way to the 
+                        absolute property, except a fixed element is not affected by scrolling. As 
+                        the rest of the non-fixed elements scrolled with the page, the fixed elements 
+                        would stay as set.
+                        <br /><br />
+                        The entire element in this example has had its fixed position set 450px 
+                        from the top of the page and 20px from the right.
+                    </text>
+                </div>
+            </div>
+            <div class="sticky-container">
+                <text class="title-four">Element Four - Sticky position</text>
+                <div class="paragraph-element sticky-paragraph">
+                    <text>
+                        Setting the position to sticky acts in a similar way to combining relative and 
+                        fixed positions. In that the element will stay where it is until the position 
+                        specified in the CSS is met, for example top: 50px.
+                        <br /><br />
+                        In this particular example the title has is sticky position set to 80vh, so 
+                        will remain where it is until that position is scrolled past, at which point the 
+                        title element stays where it is on the screen while remaining within the parent 
+                        element.
+                    </text>
+                </div>
+            </div>
+            <div>
+                <div class="demo-container">
+                    <div class="profile-title">
+                        <img class="profile-image" src="profile-img.jpg" width="130" height="110">
+                        <text class="demo-title">Demonstration - Mixing some styles together</text>
+                    </div>
+                    <div class="paragraph-element demo-paragraph">
+                        <text>
+                            In this mock profile card demo the image has a relative position set to 
+                            -20px to both the top and the left, pushing it outside its container so it 
+                            overlaps. The title has its position set to absolute by 5vh from the top. 
+                            Which moves it down from the top of the containing border.
+                            <br /><br />
+                            The overall card itself has its position set to fixed 50px from the bottom 
+                            of the page and 50px from the right.
+                        </text>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
